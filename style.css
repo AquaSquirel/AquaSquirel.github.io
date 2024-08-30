@@ -71,7 +71,7 @@
         }
 
         .button-container a.discord-button:hover::after {
-            content: "Mateus#1234";
+            content: "@mateuss - Clique para copiar";
             position: absolute;
             bottom: 100%;
             left: 50%;
