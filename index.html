@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Minhas Redes</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <h1>Mateus Sonnenberg</h1>
+    <h2>Minhas redes:</h2>
+    <div class="button-container">
+        <a href="https://www.instagram.com/mateux_s2" target="_blank">
+            <img src="https://www.edigitalagency.com.au/wp-content/uploads/new-Instagram-icon-white-png.png" alt="Instagram">
+            Instagram
+        </a>
+        <a href="https://www.x.com/aqua_kkj" target="_blank">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/5/57/X_logo_2023_%28white%29.png" alt="Twitter (X)">
+            Twitter
+        </a>
+        <a href="https://bsky.app/profile/mateus.games" target="_blank">
+            <img src="https://raw.githubusercontent.com/bluesky-social/social-app/d59340017860c9d2ec9f4927b329a9c14dc6f7f7/assets/icon-android-foreground.png" alt="BlueSky">
+            BlueSky
+        </a>
+        <a href="https://github.com/aquasquirel" target="_blank">
+            <img src="https://img.icons8.com/fluent-systems-filled/200/FFFFFF/github.png" alt="GitHub">
+            GitHub
+        </a>
+        <a class="discord-button" onclick="copyDiscordUser()">
+            <img src="https://uxwing.com/wp-content/themes/uxwing/download/brands-and-social-media/discord-white-icon.png" alt="Discord">
+            Discord
+        </a>
+    </div>
+    <div class="email-container">
+        <p>Contato: <a href="mailto:mateus.sonnenberg.amaral@gmail.com">mateus.sonnenberg.amaral@gmail.com</a></p>
+    </div>
+
+    <script>
+        function copyDiscordUser() {
+            const discordUser = "matteuss";
+            navigator.clipboard.writeText(discordUser).then(() => {
+                const discordButton = document.querySelector('.discord-button');
+                discordButton.classList.add('active');
+                setTimeout(() => discordButton.classList.remove('active'), 150);
+            });
+        }
+    </script>
+</body>
+
+</html>

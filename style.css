@@ -1,0 +1,118 @@
+body {
+    background-color: #181818;
+    color: #ffffff;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    min-height: 100vh;
+    overflow: hidden;
+}
+
+h1 {
+    font-size: 2.5em;
+    text-align: center;
+    margin-top: 50px;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+h2 {
+    font-size: 1.5em;
+    text-align: center;
+    margin: 10px 0 30px 0;
+}
+
+.button-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 90%;
+    max-width: 500px;
+    flex-grow: 1;
+    justify-content: center;
+}
+
+.button-container a {
+    background-color: #BB86FC;
+    color: #ffffff;
+    text-decoration: none;
+    padding: 15px 20px;
+    border-radius: 10px;
+    margin: 10px 0;
+    text-align: center;
+    font-size: 1.2em;
+    font-weight: bold;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+    width: 100%;
+    box-sizing: border-box;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+}
+
+.button-container a:hover {
+    background-color: #03DAC5;
+    transform: translateY(-5px);
+}
+
+.button-container a img {
+    margin-right: 10px;
+    height: 24px;
+    width: 24px;
+}
+
+.button-container a.discord-button {
+    cursor: default;
+}
+
+.button-container a.discord-button:hover::after {
+    content: "@matteuss - Clique para copiar";
+    position: absolute;
+    bottom: 100%;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: #fff;
+    color: #333;
+    padding: 5px 10px;
+    border-radius: 5px;
+    white-space: nowrap;
+    font-size: 1em;
+    font-weight: normal;
+    opacity: 1;
+    visibility: visible;
+}
+
+.button-container a.discord-button:active {
+    transform: scale(0.95);
+}
+
+.email-container {
+    margin-bottom: 30px;
+    text-align: center;
+    font-size: 1.1em;
+}
+
+.email-container a {
+    color: #fff; /* Cor do texto do e-mail */
+    text-decoration: none;
+    font-weight: bold;
+}
+
+@media (max-width: 600px) {
+    h1 {
+        font-size: 2em;
+    }
+
+    h2 {
+        font-size: 1.3em;
+    }
+
+    .button-container a {
+        font-size: 1em;
+        padding: 12px 15px;
+    }
+}
